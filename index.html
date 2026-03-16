@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jeeva M | Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Devicon -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <canvas id="snowfall"></canvas>
+    <div class="grain-bg"></div>
+    
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Vertical left text -->
+    <div class="left-vertical">jeevam8438@gmail.com</div>
+
+    <!-- MENU OVERLAY DRAWER -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-overlay-bg" onclick="toggleMenu()"></div>
+        <div class="menu-drawer" id="menuDrawer">
+            <button class="close-btn hover-target" onclick="toggleMenu()">
+                <svg viewBox="0 0 24 24" fill="none" class="hover-target" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="menu-content">
+                <div class="menu-col">
+                    <div class="menu-header">MENU</div>
+                    <a href="#home" class="menu-link hover-target" onclick="toggleMenu()"><span class="dot" style="background:#fbbf24"></span> Home</a>
+                    <a href="#about" class="menu-link hover-target" onclick="toggleMenu()"><span class="dot" style="background:#3b82f6"></span> About Me</a>
+                    <a href="#experience" class="menu-link hover-target" onclick="toggleMenu()"><span class="dot" style="background:#10b981"></span> Experience</a>
+                    <a href="#projects" class="menu-link hover-target" onclick="toggleMenu()"><span class="dot" style="background:#8b5cf6"></span> Projects</a>
+                </div>
+                <div class="menu-col">
+                    <div class="menu-header">SOCIAL</div>
+                    <a href="#" class="menu-link hover-target">Github</a>
+                    <a href="#" class="menu-link hover-target">Linkedin</a>
+                    <a href="#" class="menu-link hover-target" style="text-transform: uppercase;">RESUME</a>
+                </div>
+            </div>
+            <div class="menu-footer hover-target">
+                <div class="menu-header">GET IN TOUCH</div>
+                <a href="mailto:jeevam8438@gmail.com" class="menu-email">jeevam8438@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <!-- Header Nav -->
+        <nav class="navbar">
+            <div class="menu-icon hover-target" onclick="toggleMenu()">
+                <span class="hover-target"></span>
+                <span class="hover-target"></span>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero hover-target" id="home">
+            <h1 class="hero-title hover-target">
+                <span class="text-orange hover-target">WEB</span>
+                <span class="text-white hover-target">DEVELOPER</span>
+            </h1>
+            <div class="hero-details">
+                <div class="hero-left">
+                    <p class="large-hover-desc">Hi! I'm Jeeva. A Web Developer with hands-on experience in building and customizing websites using modern CMS platforms and web technologies.</p>
+                    <button class="btn-blog hover-target">MY BLOG</button>
+                </div>
+                <div class="hero-right">
+                    <div class="code-snippet hover-target">
+                        <span class="tag">&lt;span&gt;</span>
+                        <span class="code-text">
+                            Skilled in WordPress, WooCommerce, Shopify,<br>
+                            and custom web solutions — delivering<br>
+                            responsive and engaging online experiences.
+                        </span>
+                        <span class="tag">&lt;/span&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statement Block -->
+        <section class="statement-section hover-target">
+            <h2 class="statement-text">
+                I believe in a user centered design approach, ensuring that every project I work on is tailored to meet the specific needs of its users.
+            </h2>
+        </section>
+
+        <!-- About Me -->
+        <section class="about-section hover-target" id="about">
+            <div class="about-header hover-target">
+                <span class="about-label hover-target">This is me.</span>
+                <div class="about-divider"></div>
+            </div>
+            <div class="about-grid hover-target">
+                <div class="about-text">
+                    <h3 class="about-title hover-target">I'm Jeeva.</h3>
+                    <p class="hover-target">A web developer focused on building and customizing modern, responsive websites with clean UI, great performance, and seamless user experiences.</p>
+                </div>
+                <div class="about-text p-gap">
+                    <p class="large-hover-desc">A BCA graduate from Excel College for Commerce and Science, Periyar University, based in Tamil Nadu, India. Dedicated to turning ideas into creative digital solutions.</p>
+                    <p class="large-hover-desc">My approach focuses on creating scalable, high-performing solutions tailored to both user needs and business objectives. With experience in WordPress, WooCommerce, Shopify, and custom PHP development, I strive to deliver experiences that engage users and drive tangible results.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centered Quote -->
+        <div class="quote-centered hover-target">
+            <h2>MAKE IT WORK, MAKE IT RIGHT, MAKE IT FAST.</h2>
+        </div>
+
+        <!-- My Stack -->
+        <section class="stack-section" id="stack">
+            <div class="section-label hover-target">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20"/><path d="M17 5 7 19"/><path d="M5 12h14"/><path d="M7 5l10 14"/>
+                </svg>
+                MY STACK
+            </div>
+            
+            <div class="stack-row hover-target">
+                <div class="stack-category">FRONTEND</div>
+                <div class="stack-items">
+                    <div class="tech-chip hover-target"><i class="devicon-html5-plain colored"></i> HTML5</div>
+                    <div class="tech-chip hover-target"><i class="devicon-css3-plain colored"></i> CSS3</div>
+                    <div class="tech-chip hover-target"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                    <div class="tech-chip hover-target"><i class="devicon-php-plain colored"></i> PHP</div>
+                    <div class="tech-chip hover-target"><i class="devicon-bootstrap-plain colored"></i> Bootstrap 5</div>
+                </div>
+            </div>
+
+            <div class="stack-row hover-target">
+                <div class="stack-category">CMS & PLATFORMS</div>
+                <div class="stack-items">
+                    <div class="tech-chip hover-target"><i class="devicon-wordpress-plain colored"></i> WordPress</div>
+                    <div class="tech-chip hover-target"><i class="devicon-woocommerce-plain colored"></i> WooCommerce</div>
+                      <div class="tech-chip hover-target"><img src="assets/img/shopify-icon.png" style="width:2em;height:2em;object-fit:contain;vertical-align:middle;" alt="Shopify"> Shopify</div>
+                
+                    <div class="tech-chip hover-target"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+                </div>
+            </div>
+
+            <div class="stack-row hover-target">
+                <div class="stack-category">TOOLS</div>
+                <div class="stack-items">
+                    <div class="tech-chip hover-target"><i class="devicon-git-plain colored"></i> Git</div>
+                    <div class="tech-chip hover-target"><i class="devicon-github-original" style="color:white;"></i> GitHub</div>
+                    <div class="tech-chip hover-target"><i class="devicon-vscode-plain colored"></i> VS Code</div>
+                    <div class="tech-chip hover-target"><span>🛒</span> Shopify Admin</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="experience-section hover-target" id="experience">
+            <div class="section-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20"/><path d="M17 5 7 19"/><path d="M5 12h14"/><path d="M7 5l10 14"/>
+                </svg>
+                MY EXPERIENCE
+            </div>
+            <div class="exp-list">
+                <div class="exp-item hover-target">
+                    <div class="exp-company">Skarosoft</div>
+                    <div class="exp-title">Web Developer - Full Time</div>
+                    <div class="exp-date">10/2025 - 02/2026</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects -->
+        <section class="projects-section" id="projects">
+            <div class="section-label hover-target">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20"/><path d="M17 5 7 19"/><path d="M5 12h14"/><path d="M7 5l10 14"/>
+                </svg>
+                PROJECTS
+            </div>
+
+            <div class="projects-list">
+                <!-- Preview Image Container -->
+                <div class="project-preview" id="projectPreview"></div>
+
+                <a href="https://soos.audio/" target="_blank" class="project-item hover-target" data-image="assets/img/soos.png">
+                    <div class="project-num">_01.</div>
+                    <div class="project-details">
+                        <div class="project-title">Electronics E-Commerce Store
+                            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </div>
+                        <div class="project-tags">Shopify <span class="dot">&bull;</span> Liquid <span class="dot">&bull;</span> JavaScript</div>
+                    </div>
+                </a>
+                
+                <a href="https://aari-grace-studio.myshopify.com/" target="_blank" class="project-item hover-target" data-image="assets/img/aarigracestudio.png">
+                    <div class="project-num">_02.</div>
+                    <div class="project-details">
+                        <div class="project-title">Women's Accessories & Aari Work Store
+                            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </div>
+                        <div class="project-tags">Shopify <span class="dot">&bull;</span> Liquid <span class="dot">&bull;</span> CSS3</div>
+                    </div>
+                </a>
+
+                <a href="https://skarosoft.com/tnadirrigation/" target="_blank" class="project-item hover-target" data-image="assets/img/tnadirrigation.png">
+                    <div class="project-num">_03.</div>
+                    <div class="project-details">
+                        <div class="project-title">Rain Gun Irrigation System Page
+                            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </div>
+                        <div class="project-tags">PHP <span class="dot">&bull;</span> Bootstrap <span class="dot">&bull;</span> JavaScript</div>
+                    </div>
+                </a>
+
+                
+              
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-pre hover-target">You know how to find me</div>
+            <a href="mailto:jeevam8438@gmail.com" class="footer-email hover-target">jeevam8438@gmail.com</a>
+            <div class="footer-credit hover-target">Jeeva M</div>
+            
+            <div class="scroll-top hover-target" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <svg viewBox="0 0 24 24" fill="none" class="hover-target" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 15-6-6-6 6"/>
+                </svg>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
